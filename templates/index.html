@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Translation</title>
+</head>
+<body>
+    <h1>Language Translation</h1>
+
+    <form method="POST" action="/translate">
+        <label for="text">Enter Text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50" required></textarea><br>
+
+        <label for="destination_lang">Select Destination Language:</label>
+        <select id="destination_lang" name="destination_lang" required>
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="ml">Malayalam</option>
+            <option value="mr">Marathi</option>
+            <option value="bn">Bengali</option>
+            <option value="te">Telugu</option>
+            <option value="ta">Tamil</option>
+            <option value="gu">Gujarati</option>
+            <option value="ur">Urdu</option>
+            <option value="kn">Kannada</option>
+            <option value="or">Odia</option>
+            <option value="pa">Punjabi</option>
+            <option value="as">Assamese</option>            
+            <!-- Add more language options as needed -->
+        </select><br>
+
+        <input type="submit" value="Translate">
+    </form>
+</body>
+</html>
